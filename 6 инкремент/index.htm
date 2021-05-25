@@ -1,0 +1,39 @@
+<!--index.htm-->
+<!DOCTYPE html>
+<html lang = "ru">
+<html>
+<head>
+     <title>Colour-code</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<h2>Программа кодировки и изменения цвета v0.1</h2>
+<div id="picker">
+      <div id="preview"></div>
+      <div id="pane">
+        <div id="white-to-pure-color"></div>
+        <div id="transparent-to-black"></div>
+        <div id="knob"></div>
+      </div>
+
+      <input id="hue" type="range" min="0" max="360" value="0">
+
+      <p id="formats">
+        Hex:<br>
+        <input type="text" value="#ff0000" id="hex" class="color-format" /><br><br>
+        RGB:<br>
+        <input type="text" value="255, 0, 0" id="rgb" class="color-format" /><br><br>
+        HSL:<br>
+        <input type="text" value="0°, 100%, 50%" id="hsl" class="color-format" /><br><br>
+        HSV:<br>
+        <input type="text" value="0°, 100%, 100%" id="hsv" class="color-format" /><br><br>
+        CMYK:<br>
+        <input type="text" value="0%, 100%, 100%, 0%" id="cmyk" class="color-format" /><br><br>
+      </p>
+    </div>
+</body>
+<script src="colour.js"></script>
+
+</html>
